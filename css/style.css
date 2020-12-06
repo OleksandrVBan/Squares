@@ -1,21 +1,21 @@
-*{
+/* *{
     box-sizing: border-box;
-}
+} */
 /* Границі для блоків*/
-div {
+/* div {
     border: px solid;
-    
+} */
+hr {
+    border-top: 1px solid grey;
 }
-/*  
-Щоб розмістити контент по центру викор:  
-margin: 0 auto; 
- */
+
+/* Щоб розмістити контент по центру викор:  
+margin: 0 auto;  */
+ 
 .container {
     margin: 0 auto;
     width: 100%;
-    max-width: 1200px;
 }
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -24,30 +24,49 @@ margin: 0 auto;
     background-color: grey;
 }
 .aquamarine {
-    background-color: aquamarine;
     min-height: 740px;
     max-width: 250px;
 }
-.light_gray {
+.top, 
+.bottom {
+    background-color: grey;
+    max-width: 300px;
+    min-width: 160px;
+}
+.top {
+    min-height: 300px;
+}
+.bottom {
+    max-height: 150px;
+    min-height: 150px;
+}
+.light_gray{
+    max-width: 900px;
+    min-width: 900px;
+}
+.right_one {
     background-color: lightgray;
-    max-height: 200px;
-    min-width: 934px;
+}
+.right_two {
+    background-color: white;
+    min-width: 800px;
+    max-width: 800px;
+}
+.right_three {
+    background-color: white;
 }
 .lightblue {
     background-color: lightblue;
-    min-height: 100px;
-    min-width: 165px;
+    min-height: 150px;
+    min-width: 100px;
     max-width: 400px;
 }
 .lightgoldenrodyellow {
-    background-color: lightgoldenrodyellow;
-    min-height: 300px;
-    max-height: 300px;
-    max-width: 431px;
-    min-width: 431px;
-}
-.lightpink {
-    background-color: lightpink;
+    background-color: lightgray;
+    min-height: 200px;
+    max-height: 200px;
+    max-width: 430px;
+    min-width: 430px;
 }
 .left {
     min-height: 200px;
@@ -56,27 +75,24 @@ margin: 0 auto;
 .right {
     max-width: 463px;
 }
-
-.lightgreen {
-    background-color: lightgreen;
+.item_one,
+.item_two {
+    background-color: gray;
+    min-height: 200px;
+    max-height: 200px;
 }
 .foot_right_small {
+    background-color: gray;
+    min-width: 360px;
+    min-height: 80px;
+}
+
+/* 
+@media (max-width: 1200px) {
+.grey {
+    flex-basis: 50%;
+    max-width: 50%;
+    min-width: 50%;
     min-height: 50px;
-    max-height: 50px;
-    max-width: 376px;
-    min-width: 376px;
 }
-.display {
-    display: flex;
-    flex-wrap: wrap;
-}
-.foot_left {
-    min-width: 376px;
-}
-.foot_right_small {
-    min-height: 70px;
-    max-height: 70px;
-    max-width: 400px;
-    min-width: 400px;
-
-}
+}. */
